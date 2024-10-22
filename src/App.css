@@ -1,0 +1,290 @@
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+body, html{
+  width: 100%;
+}
+.cmp {
+  display: flex;
+  flex-direction: row;
+  height:auto;
+ }
+
+ 
+ .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  height: auto;
+  color: white; /* Example text color */
+  padding: 20px 0;
+ }
+ 
+ .slidebar {
+  position: fixed;
+  display:-webkit-box;
+  left: 0;
+  width: 180px; 
+  height:100%;
+  margin-top: 55px;
+  background-color: #781717; /* Example background color */
+ }
+ .content {
+  flex-grow: 1; /* Take up the remaining space */
+  margin-left: 180px; /* Adjust based on slidebar width */
+  padding: 20px; /* Add some padding */
+ }
+ 
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .mainhead{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+ }
+ .navbar-right {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .search-bar {
+  margin-right: 10px; /* Add some space between the search bar and the button */
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+ }
+ 
+ .connect-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+ }
+ .connect-btn:hover{
+  color:#007bff;
+  background-color:antiquewhite;
+ }
+.home{
+  color: black;
+  width:187vh;
+  background-color: rgb(244, 241, 239);
+ 
+}
+.listi{
+  display:block;
+  list-style-type:none;
+  font-weight: bolder;
+  color: azure;
+  margin-bottom: 12px;
+  border: 1px solid #781717;
+  border-radius: 5px;
+  padding: 4px;
+}
+.listi:hover{
+  background-color: #bb2525;
+  border: 1px solid white;
+
+}
+.i{
+  text-decoration: none;
+  color: azure;
+}
+.add{
+  color: yellow;
+}
+.create-head{
+  text-align: center;
+  color: rgb(96, 36, 36);
+  font-family:cursive;
+}
+.frm{
+  width: 700px;
+  height: 500px;
+  margin-left: 29%;
+  background-color: antiquewhite;
+  border: 2px solid rgb(23, 23, 23);
+  border-radius: 9px;
+  padding: 4px;
+  
+}
+.frm-lbl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(113, 35, 35);
+  font-weight: bold;
+  margin-top: 8px;
+}
+.sb-btn{
+  border: 1px solid rgb(27, 25, 25);
+  border-radius: 4px;
+  margin-top: 80px;
+  margin-left: 42%;
+  margin-bottom: 3px;
+  background-color: #abd0f8;
+  color: rgb(15, 9, 2);
+  padding: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.sb-btn:hover{
+  background-color: #007bff;
+  color: white;
+}
+.hmain{
+  h3{
+    text-align: center;
+    color: #521313;
+  }
+  hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 3px;
+    background-color: #007bff;
+  }
+}
+.campaigns-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin-left: 14%;
+  height: 700px;
+  overflow-y: auto; 
+ }
+ 
+ .campaign-card {
+  margin-right: 15px;
+  margin-left: 10px;
+  flex: 0 0 calc(25% - 20px); /* Adjusts the width of each card to fit 3 per row */
+  margin-bottom: 10px; /* Adds space between rows */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a card-like effect */
+  .inhead{
+    text-align: center;
+    font-size: larger;
+  }
+  p{
+    text-align: center;
+  }
+ }
+ 
+ .campaign-image {
+  width: 65%; /* Ensures the image takes the full width of the card */
+  height: auto; /* Maintains the aspect ratio of the image */
+  object-fit: cover; /* Covers the area of the card without stretching the image */
+  margin-bottom: 20px; /* Adds space between the image and the text */
+  margin-left: 17%;
+
+ }
+ .desb{
+  margin-left: 36%;
+  margin-top: 10px;
+  padding: 7px;
+  border: 1px solid red;
+  border-radius: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+ }
+ .desb:hover{
+  
+  background-color: rgb(87, 15, 11);
+  color: #ccc;
+ }
+ .campD{
+  /* width: 100%; */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Add some padding for better spacing */
+ 
+  h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+  hr{
+    height: 2px;
+    margin-right: 70px;
+    margin-left: 70px;
+    background-color: #a3560e;
+  }
+  img{
+   
+    height: 500px;
+    width: 680px;
+    border: 1px solid red;
+    border-radius: 25px;
+
+  }
+ }
+ .campContainer{
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px; 
+ }
+.stry{
+  margin: 12px;
+  color: rgb(16, 79, 21);
+  font-size: x-large;
+}
+.bckc{
+  background-color: #abd0f8;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bckc:hover{
+  background-color: #14273b;
+  color: white;
+}
+.dnt{
+  margin-left: 100px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f0d4d4;
+  border-radius: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+
+}
+.dnt:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/* In App.css */
+.donorsContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+ }
+ 
+ .donorsContainer th,
+ .donorsContainer td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+ }
+ 
+ .donorsContainer th {
+  background-color: #f2f2f2;
+  color: black;
+ }
+ 
+ .donorsContainer tr:nth-child(even) {
+  background-color: #f2f2f2;
+ }
+ 
+ .donorsContainer tr:hover {
+  background-color: #ddd;
+ }
